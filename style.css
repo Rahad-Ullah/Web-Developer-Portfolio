@@ -161,9 +161,10 @@ main {
 }
 
 /* Skill section */
-.skill-section{
+.skill-section {
     margin: 130px 0;
 }
+
 .skills-container {
     display: flex;
     justify-content: space-around;
@@ -196,19 +197,24 @@ main {
 
 
 /* resume section */
-.resume-container{
+.resume{
+    margin-bottom: 110px;
+}
+.resume-container {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     margin-top: 50px;
 }
+
 .resume-title {
     color: #474747;
     font-size: 30px;
     font-weight: 700;
     margin: 20px 0
 }
-.resume-item{
+
+.resume-item {
     margin: 30px 0;
 }
 
@@ -231,7 +237,72 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
-.resume-download{
+
+.resume-download {
     text-align: center;
     margin: 20px 0;
+}
+
+
+/* footer section */
+footer {
+    background-color: #FFF8F3;
+    padding: 130px 0;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+.footer-column {
+    text-align: start;
+}
+
+.footer-title {
+    text-align: start;
+}
+
+.footer-text {
+    text-align: start;
+}
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social-links a{
+    display: block;
+    margin-right: 12px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.social-links a:hover{
+    transform: scale(1.1);
+    transform: translate();
+}
+.social-links img{
+    width: 24px;
+}
+
+form input, textarea {
+    min-width: 450px;
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+form textarea:focus-visible{
+    outline: 1.5px solid #FD6E0A;
+
+}
+form input:focus-visible{
+    outline: 1.5px solid #FD6E0A;
 }
