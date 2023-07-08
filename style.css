@@ -161,11 +161,15 @@ main {
 }
 
 /* Skill section */
+.skill-section{
+    margin: 130px 0;
+}
 .skills-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 50px auto;
+    gap: 24px;
 }
 
 .skill-description {
@@ -177,8 +181,57 @@ main {
     background: #FFF;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
     padding: 30px;
-    margin: 12px;
 }
-.skill .skill-title{
+
+.skill .skill-title {
     margin: 30px 0 20px 0;
+}
+
+.skill .skill-text {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/* resume section */
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+}
+.resume-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0
+}
+.resume-item{
+    margin: 30px 0;
+}
+
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.institute {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.resume-item-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+.resume-download{
+    text-align: center;
+    margin: 20px 0;
 }
