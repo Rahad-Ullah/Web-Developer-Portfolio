@@ -10,7 +10,7 @@
     color: white;
     border-radius: 5px;
     border: 0;
-    font-size: 20px;
+    font-size: medium;
     font-weight: 700;
     padding: 15px 35px;
 }
@@ -20,7 +20,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 0px 60px 30px 0;
 }
 .nav-title{
     font-size: 45px;
@@ -41,4 +41,51 @@ nav li{
 nav a{
     text-decoration: none;
     color: #474747;
+}
+
+/* verticle banner */
+    .vr-banner{
+        padding: 0px 30px 0px 0px;
+    }
+    .vr-banner img{
+        width: 84%;
+    }
+
+/* header related style */
+.header{
+    background-color: #FFF8F3;
+    padding: 0 0 0 35px;
+    background-image: url(images/header_bg.png);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    padding-top: 30px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-greeting{
+    font-size: 40px;
+    color: #474747;
+    font-weight: 600;
+}
+.banner .banner-title{
+    font-size: 65px;
+    color: #181818;
+    font-weight: 700;
+}
+.banner p{
+    font-weight: 400;
+    color: #474747;
+    margin: 20px 0;
+    max-width: 585px;
+}
+.banner-content button{
+    margin-right: 20px;
+}
+.profile-pic{
+    width: 500px;
 }
