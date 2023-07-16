@@ -15,6 +15,7 @@
     font-size: medium;
     font-weight: 700;
     padding: 15px 35px;
+    margin: 5px 0;
     cursor: pointer;
 }
 .btn-primary:hover{
@@ -129,13 +130,14 @@ nav a:hover{
 }
 
 .profile-pic {
-    width: 500px;
+    width: 49%;
 }
 
 /* main section */
 main {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 48px;
 }
 
 /* About section */
@@ -149,7 +151,7 @@ main {
 .about-info-container {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: 24px;
 }
 
 .about-info {
@@ -180,7 +182,8 @@ main {
 }
 
 .skill-description {
-    padding: 0 150px;
+    width: 80%;
+    margin: 10px auto;
 }
 
 .skill {
@@ -253,7 +256,7 @@ main {
 /* footer section */
 footer {
     background-color: #FFF8F3;
-    padding: 130px 0;
+    padding: 130px 48px 0;
 }
 
 .footer-container {
@@ -265,6 +268,7 @@ footer {
 }
 
 .footer-column {
+    width: 50%;
     text-align: start;
 }
 
@@ -295,7 +299,7 @@ footer {
 }
 
 form input, textarea {
-    min-width: 450px;
+    width: 100%;
     display: block;
     padding: 15px;
     border-radius: 5px;
@@ -312,3 +316,93 @@ form textarea:focus-visible{
 form input:focus-visible{
     outline: 1.5px solid #FD6E0A;
 }
+
+.copyright{
+    display: block;
+    text-align: center;
+    padding: 24px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 130px;
+    font-size: 14px;
+}
+
+
+/* Resposive Styles */
+
+/* Large Device */
+@media screen and (max-width: 992px) {
+    nav{
+        padding: 30px 0;
+    }
+    nav ul{
+        gap: 48px;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    .header{
+        background-image: none;
+    }
+    .header-container{
+        padding: 0 48px;
+    }
+    .vr-banner{
+        display: none;
+    }
+    .about{
+        padding: 130px 48px;
+        gap: 24px;
+    }
+    .skills-container{
+        flex-wrap: wrap;
+        gap: 48px;
+        justify-content: center;
+    }
+    .skill{
+        flex-basis: 46%;
+    }
+    .footer-container{
+        gap: 48px;
+    }
+}
+/* Medium Device */
+@media screen and (max-width: 768px) {
+    .header-container{
+        padding: 0 24px;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+}
+
+/* Small Device */
+@media screen and (max-width: 640px) {
+    .banner{
+        flex-direction: column;
+        gap: 48px;
+    }
+    main{
+        padding: 24px;
+    }
+    .about{
+        padding: 130px 24px;
+    }
+    .about-info-container{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .skills-container{
+        flex-direction: column;
+    }
+    footer{
+        padding: 130px 24px 0;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+    }
+}
+
