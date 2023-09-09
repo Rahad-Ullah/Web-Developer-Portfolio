@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
 .btn-primary {
     background-color: #FD6E0A;
     color: white;
@@ -113,7 +112,8 @@ nav a:hover{
 }
 
 .banner .banner-title {
-    font-size: 65px;
+    font-size: 5vw;
+    /* font-size: 65px; */
     color: #181818;
     font-weight: 700;
 }
@@ -152,6 +152,7 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 24px;
+    gap: 24px;
 }
 
 .about-info {
@@ -208,6 +209,7 @@ main {
 /* resume section */
 .resume{
     margin-bottom: 110px;
+    margin-top: 110px;
 }
 .resume-container {
     display: flex;
@@ -268,7 +270,7 @@ footer {
 }
 
 .footer-column {
-    width: 50%;
+    width: 45%;
     text-align: start;
 }
 
@@ -298,6 +300,9 @@ footer {
     width: 24px;
 }
 
+form{
+    width: 100%;
+}
 form input, textarea {
     width: 100%;
     display: block;
@@ -355,7 +360,7 @@ form input:focus-visible{
     }
     .skills-container{
         flex-wrap: wrap;
-        gap: 48px;
+        gap: 2rem;
         justify-content: center;
     }
     .skill{
@@ -370,6 +375,12 @@ form input:focus-visible{
     .header-container{
         padding: 0 24px;
     }
+    .about-info-container{
+        flex-wrap: wrap;
+    }
+    .about-info{
+        flex-basis: 45%;
+    }
     .resume-container{
         flex-direction: column;
     }
@@ -377,9 +388,20 @@ form input:focus-visible{
 
 /* Small Device */
 @media screen and (max-width: 640px) {
+    nav{
+        flex-direction: column;
+        gap: 24px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 12px;
+    }
     .banner{
         flex-direction: column;
         gap: 48px;
+    }
+    .banner-content{
+        text-align: center;
     }
     main{
         padding: 24px;
@@ -389,7 +411,7 @@ form input:focus-visible{
     }
     .about-info-container{
         flex-direction: column;
-        gap: 24px;
+        gap: 1.5rem;
     }
 
     .skills-container{
